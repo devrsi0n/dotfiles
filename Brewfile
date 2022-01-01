@@ -1,0 +1,13 @@
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "chezmoi"
+brew "git-filter-repo"
+brew "git-secrets"
+brew "libpq", link: true
+brew "pgcli"
+brew "socat"
+brew "heroku/brew/heroku"
+cask "raycast"
+cask "responsively"
