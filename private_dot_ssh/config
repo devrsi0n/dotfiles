@@ -1,3 +1,4 @@
+{{ if ne .chezmoi.os "darwin" }}
 Host github.com
    HostName github.com
    User git
@@ -5,3 +6,4 @@ Host github.com
    # ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=7890
    # Use socks5 proxy
    ProxyCommand nc -v -x 127.0.0.1:7890 %h %p
+{{ end }}
